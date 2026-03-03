@@ -1,0 +1,48 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Poppins", "Trebuchet MS", sans-serif;
+  background: radial-gradient(circle at top right, rgba(30, 64, 175, 0.22), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(2, 132, 199, 0.18), transparent 45%), #020617;
+  color: #e2e8f0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.prose h2,
+.prose h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: #f8fafc;
+}
+
+.prose ul {
+  margin-bottom: 1rem;
+  padding-left: 1.1rem;
+  list-style: disc;
+}

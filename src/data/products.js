@@ -1,0 +1,59 @@
+﻿export const products = [
+  {
+    slug: "pdf-compress-pro",
+    name: "PDF Compress Pro",
+    status: "Live",
+    summary: "Reduce PDF file size while preserving readability.",
+    description:
+      "A browser-based PDF optimization tool for teams handling large file submissions, archives, and routine document transfers.",
+    features: ["Batch compression", "Preset quality levels", "Secure temporary processing"],
+    faqs: [
+      {
+        question: "Does the tool preserve text quality?",
+        answer: "Yes. Compression profiles are tuned to reduce size while keeping text readable and printable.",
+      },
+      {
+        question: "Is uploaded data stored permanently?",
+        answer: "The processing pipeline is designed around temporary handling with automatic cleanup policies.",
+      },
+    ],
+  },
+  {
+    slug: "form-image-resizer",
+    name: "Form Image Resizer",
+    status: "Beta",
+    summary: "Resize and optimize images for form uploads.",
+    description:
+      "Fast image resizing utility for strict upload dimensions and file size limits, suitable for compliance-style workflows.",
+    features: ["Custom dimensions", "DPI-aware exports", "Aspect ratio lock"],
+    faqs: [
+      {
+        question: "Can I set exact output dimensions?",
+        answer: "Yes, you can define target width and height while preserving quality settings.",
+      },
+      {
+        question: "Which formats are supported?",
+        answer: "Standard web formats including JPEG, PNG, and modern compressed formats are supported.",
+      },
+    ],
+  },
+  {
+    slug: "api-workflow-automator",
+    name: "API Workflow Automator",
+    status: "Coming soon",
+    summary: "Connect APIs and automate routine operations.",
+    description:
+      "Rule-based automation layer for recurring tasks across internal services and third-party integrations.",
+    features: ["Trigger-action builder", "Retry controls", "Execution logs"],
+    faqs: [
+      {
+        question: "Will this support webhooks?",
+        answer: "Webhook trigger support is part of the first release roadmap.",
+      },
+      {
+        question: "Can teams create reusable templates?",
+        answer: "Template-based automation flows are planned to support shared team workflows.",
+      },
+    ],
+  },
+];
