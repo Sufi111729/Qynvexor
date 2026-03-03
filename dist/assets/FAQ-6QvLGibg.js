@@ -1,0 +1,1 @@
+import{j as s}from"./index-BQs4L8R6.js";import{C as r}from"./Card-Dck0883H.js";function n({faqs:t}){return s.jsx("div",{className:"grid gap-4 md:grid-cols-2",children:t.map(e=>s.jsxs(r,{children:[s.jsx("h3",{className:"text-lg font-semibold text-white",children:e.question}),s.jsx("p",{className:"mt-2 text-slate-300",children:e.answer})]},e.question))})}export{n as F};

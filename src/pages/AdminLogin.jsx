@@ -1,19 +1,19 @@
-import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import SEO from "../components/SEO";
 import { loginAdmin, isAdminAuthenticated } from "../lib/blogStorage";
 
 export default function AdminLogin() {
   const navigate = useNavigate();
-  const location = useLocation();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  if (isAdminAuthenticated()) {
-    navigate("/admin/dashboard", { replace: true });
-    return null;
-  }
+  useEffect(() => {
+    if (isAdminAuthenticated()) {
+      navigate("/admin/dashboard", { replace: true });
+    }
+  }, [navigate]);
 
   function onSubmit(event) {
     event.preventDefault();
@@ -25,8 +25,7 @@ export default function AdminLogin() {
       return;
     }
 
-    const next = location.state?.from === "/admin/dashboard" ? "/admin/dashboard" : "/admin/dashboard";
-    navigate(next, { replace: true });
+    navigate("/admin/dashboard", { replace: true });
   }
 
   return (

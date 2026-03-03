@@ -1,0 +1,1 @@
+import{j as e}from"./index-BQs4L8R6.js";function t({children:r,className:s=""}){return e.jsx("article",{className:`rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-soft ${s}`,children:r})}export{t as C};
